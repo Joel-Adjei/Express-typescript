@@ -12,4 +12,10 @@ router.post("/router", (req, res) => {
   res.send("Hello, Router!");
 });
 
+router.put("/router", (req, res) => {
+  const data = req.body;
+  console.log("Updated data:", data);
+  res.send("Hello, Router!");
+});
+
 export default router;
